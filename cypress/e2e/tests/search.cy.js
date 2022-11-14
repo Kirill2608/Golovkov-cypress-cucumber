@@ -24,4 +24,5 @@ describe('Search',() =>{
         cy.get(headerPage.selectors.headingCounter).contains('3 results have been found')
         
     })
+
 })
