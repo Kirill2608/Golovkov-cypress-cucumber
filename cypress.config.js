@@ -19,8 +19,8 @@ module.exports = defineConfig({
 
       return config;
     },
-    specPattern: ["cypress/e2e/features/*.feature", "cypress/e2e/tests/*.cy.js", "cypress/e2e/MaxOn/test/*.cy.js"],
-    baseUrl: "http://autopract.com/",
+    specPattern: [ "cypress/e2e/magento/*.cy.js"],
+    baseUrl: "https://magento.softwaretestingboard.com/",
     chromeWebSecurity: false,
   },
 });

@@ -21,6 +21,7 @@
     "@badeball/cypress-cucumber-preprocessor": "^13.0.3",
     "@bahmutov/cypress-esbuild-preprocessor": "^2.1.5",
     "@shelex/cypress-allure-plugin": "^2.33.1",
+    "chai": "^4.3.7",
     "cypress": "^10.11.0",
     "esbuild": "^0.15.11",
     "multiple-cucumber-html-reporter": "^3.0.1"

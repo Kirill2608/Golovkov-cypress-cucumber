@@ -23,3 +23,24 @@
 //
 // -- This will overwrite an existing command --
 // Cypress.Commands.overwrite('visit', (originalFn, url, options) => { ... })
+
+Cypress.Commands.add('getPopularValue', (selector, numberFilterResult) => {
+    let textPopular
+    cy.get(selector).eq(numberFilterResult).should('be.visible').invoke('text')
+        .then(($text)=>{
+            textPopular = parseInt($text)
+        }).then(()=>{
+        cy.wrap(textPopular)
+})
+})
+
+Cypress.Commands.add('clickOnElement', (element) => {
+    cy.get(element).should('be.visible').click()
+})
+
+Cypress.Commands.add('getCommentsCount', (selector, elementIndex) => {
+    cy.get(selector).eq(elementIndex).invoke("val")
+    .then((result) => {
+        commentCount = parseInt(result);
+  })
+});
